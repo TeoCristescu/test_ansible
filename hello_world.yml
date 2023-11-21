@@ -4,4 +4,4 @@
     - name: Create /opt/test.txt with Hello World
       copy:
         content: "Hello World!"
-        dest: "/opt/test.txt"
+        dest: "/home/ubuntu/test.txt"
