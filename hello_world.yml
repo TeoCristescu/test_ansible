@@ -1,7 +1,7 @@
 - name: Hello World Sample
   hosts: all
   tasks:
-    - name: Hello Message
-      debug:
-        msg: "Hello World!"
-
+    - name: Create /opt/test.txt with Hello World
+      copy:
+        content: "Hello World!"
+        dest: "/opt/test.txt"
