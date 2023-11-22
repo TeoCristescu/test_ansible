@@ -1,7 +1,9 @@
-- name: Hello World Sample
-  hosts: all
+- name: install nginx
+  hosts: vm_dcdr
   tasks:
-    - name: Create /opt/test.txt with Hello World
-      copy:
-        content: "Hello World!"
-        dest: "/home/ubuntu/test.txt"
+    - name: install nginx
+      apt: name=nginx state=latest
+    - name: start nginx
+      service:
+          name: nginx
+          state: started
