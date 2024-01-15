@@ -1,5 +1,5 @@
 - name: install nginx
-  hosts: vm_dcdr
+  hosts: Elastic_Master01
   become: yes
   tasks:
     - name: update
